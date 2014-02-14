@@ -30,7 +30,7 @@ define thin::app (
   $chdir,
   $user,
   $group,
-  $rackup,
+  $environment = 'production',
   $ensure     = present,
   $address    = 'localhost',
   $port       = '3000',

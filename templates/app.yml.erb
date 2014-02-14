@@ -5,7 +5,7 @@ tag: <%= @name %>
 chdir: <%= @chdir %>
 user: <%= @user %>
 group: <%= @group %>
-rackup: <%= @rackup %>
+environment: <%= @environment %>
 log: <%= scope.lookupvar('thin::log_dir') %>/<%= @name %>.log
 pid: <%= scope.lookupvar('thin::pid_dir') %>/<%= @name %>.pid
 daemonize: <%= @daemonize %>
